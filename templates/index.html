@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Developer Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="{{url_for('static',filename="css/style.css")}}">
+</head>
+<body onload ="hideLoader()">
+  <!-- Navbar -->
+   <div id="loader">
+    <img src={{url_for('static',filename ="/images/logo1.png"  )}}alt="Logo" id="loader-logo">
+    </div>
+   </div>
+  <nav class="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src={{url_for('static',filename ="/images/logo1.png"  )}} alt="Logo" width="100" height="100" class="d-inline-block align-text-top">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container hero-content">
+        <div class ="hero-text">
+      <h1 class ="animated-name">Hi, I'm <span class = "animated-name">ADVAITH S</span></h1>
+      <h2 class = "animated-name">A Full Stack Developer</h2>
+      <p class="animated-name">Creating innovative and scalable web solutions</p>
+      <button class="hero-button" onclick="openlink()">Get My CV</button>
+      <div class="social-links">
+        <a href="https://github.com/4dv4ith"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/advaith-s-a301b6260"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/_4dv4ith/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100069699643601"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+    <div class="hero-image">
+        <img src={{url_for('static',filename="images/Screenshot_2023-07-05_225153-removebg-preview (3).png")}}>
+        </div>
+        </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p >I am a trained fresher with strong
+        knowledge in HTML, CSS, JavaScript, and
+        Python Flask, and basic proficiency in
+        C/C++ and Java. Having successfully
+        completed a Python course conducted by
+        the Nasscom Foundation, I am wellequipped with the skills needed for both
+        front-end and back-end development. My
+        passion for web development drives me to
+        create responsive and dynamic web
+        applications, and I am dedicated to
+        continuously learning and improving my
+        technical expertise</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h3>Python</h3>
+          <div class="skill-bar" style="width: 80%;"></div>
+        </div>
+        <div class="skill">
+          <h3>C/C++</h3>
+          <div class="skill-bar" style="width: 80%;"></div>
+        </div>
+        <div class="skill">
+            <h3>Html/CSS</h3>
+            <div class="skill-bar" style="width: 50%;"></div>
+          </div>
+          <div class="skill">
+            <h3>JavaScript</h3>
+            <div class="skill-bar" style="width: 20%;"></div>
+          </div>
+        <!-- More Skills -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project">
+          <img src="project1.png" alt="Project Image">
+          <h3>Project Title</h3>
+          <p>Short description of the project...</p>
+          <a href="https://github.com" class="project-button">View Code</a>
+          <a href="#" class="project-button">Live Demo</a>
+        </div>
+        <!-- More Projects -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="contact.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <div class = "container">
+    <button class = "hero-button" onclick="openlink2()">DOWload CV</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+  function hideLoader() {
+    // Hide the loader
+    document.getElementById("loader").style.display = "none";
+
+    // Show the content
+    document.getElementById("content").style.display = "block";
+}
+
+function openlink() {
+  window.location.href = "#contact";
+}
+function openlink2() {
+  window.location.href = "/download-cv";
+}
+</script>
+</body>
+</html>
