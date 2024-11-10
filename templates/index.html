@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Developer Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="{{url_for('static',filename="css/style.css")}}">
+</head>
+<body >
+  <!-- Navbar -->
+   
+  <nav class="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src={{url_for('static',filename ="/images/logo1.png"  )}} alt="Logo" width="100" height="100" class="d-inline-block align-text-top">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certification">Certification</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#refrence">Refrence</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#cv">CV</a></li>
+      </ul>
+      
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container hero-content">
+        <div class ="hero-text">
+      <h1 class ="animated-name">Hi, I'm <span class = "animated-name">ADVAITH S</span></h1>
+      <h2 class = "animated-name">A Full Stack Developer</h2>
+      <p class="animated-name">Creating innovative and scalable web solutions</p>
+      <button class="hero-button" onclick="openlink()">Get My CV</button>
+      <div class="social-links">
+        <a href="https://github.com/4dv4ith"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/advaith-s-a301b6260"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/_4dv4ith/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100069699643601"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+    <div class="hero-image">
+        <img src={{url_for('static',filename="images/Screenshot_2023-07-05_225153-removebg-preview (3).png")}}>
+        </div>
+        </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p >I am a trained fresher with strong
+        knowledge in HTML, CSS, JavaScript, and
+        Python Flask, and basic proficiency in
+        C/C++ and Java. Having successfully
+        completed a Python course conducted by
+        the Nasscom Foundation, I am wellequipped with the skills needed for both
+        front-end and back-end development. My
+        passion for web development drives me to
+        create responsive and dynamic web
+        applications, and I am dedicated to
+        continuously learning and improving my
+        technical expertise</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h3>Python</h3>
+          <div class="skill-bar" style="width: 80%;"></div>
+        </div>
+        <div class="skill">
+          <h3>C/C++</h3>
+          <div class="skill-bar" style="width: 80%;"></div>
+        </div>
+        <div class="skill">
+            <h3>Html/CSS</h3>
+            <div class="skill-bar" style="width: 50%;"></div>
+          </div>
+          <div class="skill">
+            <h3>JavaScript</h3>
+            <div class="skill-bar" style="width: 20%;"></div>
+          </div>
+        <!-- More Skills -->
+      </div>
+    </div>
+  </section>
+<!--certification-->
+
+  <section id ="certification">
+  <h2>Certification</h2>
+  <div class="certification-grid">
+    <div class="certification">
+      <img src={{url_for('static',filename ="/images/Capture4.png"  )}} alt="Project Image">
+      <h3>Software Programmer - Python</h3>
+      <p><b>Issued By:</b> NASSCOM</p>
+        <p><b>Date of Issue:</b> 31/07/2024</p>
+        <p><b>Certification ID:</b> FSP/2024/7/10179288<br>
+        <b>Score:</b> 80% (Gold Category)</p>
+        <button class = "certification-button" onclick="openlink4()">View</button>
+      </div>
+      <div class="certification">
+        <img src={{url_for('static',filename ="/images/Capture5.png"  )}} alt="Project Image">
+        <h3>Degree of Bachelor of Science(Computer Science)</h3>
+        <p><b>Issued By:</b> University of Kerala</p>
+          <p><b>Date of Issue:</b> 29/07/2024</p>
+          <p><b>Certification ID:</b> 32021601/32021956006<br>
+          <b>Score:</b> 71% (B grade)</p>
+          <button class = "certification-button" onclick="openlink4()">View</button>
+        </div>
+    </div>
+  </div>
+</section>
+  <!-- Projects Section -->
+  <section id="projects" >
+    <h2>Projects</h2>
+    <div class="container">
+      
+      <div class="project-grid">
+        <div class="project">
+          <img src={{url_for('static',filename ="/images/Capture.png"  )}} alt="Project Image">
+          <img src={{url_for('static',filename ="/images/Capture2.png"  )}} alt="Project Image">
+          <img src={{url_for('static',filename ="/images/Capture3.png"  )}} alt="Project Image">
+          <h3>HRMS Mini Project
+          </h3>
+          <p>Technologies Used: HTML, CSS, PHP, MySQL</p>
+          <p>Description: Developed a Human Resource
+            Management System (HRMS) as a mini project during
+            college. This project involved creating a user-friendly
+            interface for managing employee data, attendance, and
+            payroll, utilizing HTML and CSS for the front-end and
+            PHP and MySQL for the back-end.
+            </p>
+          <a href="https://github.com" class="project-button">View Code</a>
+          <a href="#" class="project-button">Live Demo</a>
+        </div>
+    
+        
+          <div class="project">
+            <img src={{url_for('static',filename ="/images/Capture.png"  )}} alt="Project Image">
+            
+            <h3>ERP MAJOR PROJECT
+            </h3>
+            <p>Technologies Used: HTML, CSS, JavaScript, Python</p>
+            <p>Description: Completed an Enterprise Resource
+              Planning (ERP) system as a major project in college.
+              This project integrated various business processes
+              such as inventory management, order processing, and
+              accounting. The front-end was built using HTML, CSS,
+              and JavaScript, while Python was used for the back-end logic.
+              
+              </p>
+            <a href="https://github.com" class="project-button">View Code</a>
+            <a href="#" class="project-button">Live Demo</a>
+          </div>
+          
+        </div>
+        <div class="project-grid">
+          <div class="project">
+            <img src={{url_for('static',filename ="/images/Capture.png"  )}} alt="Project Image">
+            
+            <h3>ONLINE EXAM PORTAL
+            </h3>
+            <p>Technologies Used: HTML, CSS, JavaScript, Python Flask</p>
+            <p>Description: Developed an online examination portal as a
+              project in the Python course conducted by Nasscom
+              Foundation. This project featured modules for user
+              management, exam creation, conducting exams, and
+              displaying results. The portal was created using HTML,
+              CSS, and JavaScript for the front-end, and Python Flask
+              for the back-end.
+              </p>
+            <a href="https://github.com" class="project-button">View Code</a>
+            <a href="#" class="project-button">Live Demo</a>
+          </div>
+        </div>
+        <!-- More Projects -->
+      </div>
+    </div>
+  </section>
+  <!--refrence-->
+  <section id="refrence" class="refrence">
+    <div class="container">
+      <h2>Refrence</h2>
+      <p >Name: Sindhu B.S.<br>
+        Designation: HOD of Computer Science
+         Department, UIT Pirappancode<br>
+        Email : sindhuaji2004@gmail.com<br>
+        Mobile no : +91 8547362600</p>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="contact" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <section id ="cv">
+  <div class = "container">
+    <button class = "hero-button" onclick="openlink2()">Download CV</button>
+  </div>
+</section>
+  <script src="script.js"></script>
+  <script>
+  function hideLoader() {
+    // Hide the loader
+    document.getElementById("loader").style.display = "none" ;
+
+    // Show the content
+    document.getElementById("content").style.display = "block";
+}
+
+function openlink() {
+  window.location.href = "#cv";
+}
+function openlink2() {
+  window.location.href = "/download-cv";
+}
+function openlink3() {
+  window.location.href = "/download-certificate";
+}
+function openlink4() {
+  window.location.href = "/download2-certificate";
+}
+</script>
+</body>
+</html>
